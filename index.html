@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Harleen Kaur - Portfolio</title>
+  <meta content="Full Stack Developer & Data Science Enthusiast" name="description">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="header d-flex flex-column">
+    <div class="profile-img">
+      <div class="profile-circle">
+        <img src="assets/img/projects/profile-photo.JPG" alt="Harleen Kaur" onError="this.onerror=null; this.src='assets/img/fallback-profile.jpg'; this.style.objectFit='contain'; this.style.padding='10px';">
+      </div>
+    
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Harleen Kaur</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/harleen-kaur-59b420187/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/KaurHarleen1930" class="github"><i class="bi bi-github"></i></a>
+      <a href="mailto:kaurharleen@vt.edu" class="email"><i class="bi bi-envelope"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#projects"><i class="bi bi-code-slash navicon"></i> Projects</a></li>
+        <li><a href="#experience"><i class="bi bi-briefcase navicon"></i> Experience</a></li>
+        <li><a href="#skills"><i class="bi bi-bar-chart navicon"></i> Skills</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Reach Out</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <div class="container" data-aos="fade-up">
+    <h1>Harleen Kaur</h1>
+    <p class="subtitle">I'm a</p>
+    
+    <!-- Tags Container -->
+    <div class="tags-container">
+      <span class="tag">Hokie</span>
+      <span class="tag">Data Science Enthusiast</span>
+      <span class="tag">Full-Stack Developer</span>
+      <span class="tag">Tech Leader & Mentor</span>
+      <span class="tag">Creative Thinker</span>
+      <span class="tag">Storyteller</span>
+      <span class="tag">NITian</span>
+    </div>
+    
+    <p class="description">
+      Master's student in Computer Science at Virginia Tech, specializing in Machine Learning and Data Analytics. With a knack for transforming data into insights and ideas into impact, I blend technology, creativity, and leadership to shape meaningful solutions.
+    </p>
+    
+    <div class="hero-buttons">
+      <a href="#contact" class="btn primary-btn">Contact Me</a>
+      <a href="#projects" class="btn secondary-btn">View My Work</a>
+    </div>
+    
+    <!-- Job seeking tag - placed below buttons -->
+    <div class="job-seeking-tag">
+      <span class="tag highlight">Actively Looking for Job Opportunities in Machine Learning, Data Science and Data Analyst Roles</span>
+    </div>
+  </div>
+</section>
+
+<!-- CSS for Updated Hero Section -->
+<style>
+  /* Tags styling */
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tag {
+    background-color: rgba(88, 166, 255, 0.1);
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    font-size: 0.9rem;
+  }
+  
+  .tag:hover {
+    background-color: rgba(88, 166, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .tag.highlight {
+    background-color: rgba(88, 166, 255, 0.2);
+    border-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+  
+  /* To center the content better */
+  .hero .container {
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .hero .subtitle {
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero .description {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  
+  /* Job seeking tag container */
+  .job-seeking-tag {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<!-- Fix for profile picture in sidebar -->
+<style>
+  /* Profile picture fix */
+  .profile-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px solid var(--accent-color);
+    background-color: var(--dark-secondary);
+  }
+  
+  .profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  /* Additional fix for profile image if needed */
+  @media (max-width: 767px) {
+    .profile-circle {
+      width: 80px;
+      height: 80px;
+    }
+  }
+</style>
+
+    <!-- Projects Section -->
+<!-- Projects Section with Tabs -->
+<section id="projects" class="projects section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Academic Projects</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <!-- Tabs navigation -->
+    <ul class="nav nav-tabs project-tabs" id="projectTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="rental-tab" data-bs-toggle="tab" data-bs-target="#rental-content" type="button" role="tab" aria-controls="rental-content" aria-selected="true">
+          ML-Based Rental Price Prediction System
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="data-viz-tab" data-bs-toggle="tab" data-bs-target="#data-viz-content" type="button" role="tab" aria-controls="data-viz-content" aria-selected="false">
+          Interactive Data Visualization Platform
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce-content" type="button" role="tab" aria-controls="ecommerce-content" aria-selected="false">
+          E-Commerce Platform
+        </button>
+      </li>
+    </ul>
+    
+    <!-- Tab content -->
+    <div class="tab-content project-tab-content" id="projectTabsContent">
+      <!-- Project 1 Tab Content -->
+      <div class="tab-pane fade show active" id="rental-content" role="tabpanel" aria-labelledby="rental-tab">
+        <div class="project-tab-wrapper">
+          <div class="project-image">
+            <img src="assets/img/projects/machine-learning.jpg" alt="Rental Price Prediction System">
+          </div>
+          <div class="project-details">
+            <h3>ML-Based Rental Price Prediction System</h3>
+            <p><strong>Overview:</strong> Developed machine learning models to predict rental prices and classify properties into market segments, helping renters and property owners make data-driven decisions.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Implemented supervised learning (Linear Regression, XGBoost, LightGBM) and unsupervised algorithms (K-Means) achieving ~90% accuracy</li>
+              <li>Enhanced prediction through dimensionality reduction (PCA), feature engineering, and geospatial data enrichment via Geopy API</li>
+              <li>Validated model performance using cross-validation, hypothesis testing (T-tests, F-tests), and statistical validation techniques</li>
+              <li>Discovered market patterns through clustering analysis and association rule mining</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>scikit-learn</span>
+              <span>TensorFlow</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/KaurHarleen1930/rental_price_prediction_regression_classification_clustering" class="btn small-btn" target="_blank"><i class="bi bi-github"></i> Code</a>
+              <a href="https://www.kaggle.com/code/harleenkaurvt1930/apartment-rent-data-regression-classification" class="btn small-btn" target="_blank"><i class="bi bi-link-45deg"></i> Kaggle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 Tab Content -->
+      <div class="tab-pane fade" id="data-viz-content" role="tabpanel" aria-labelledby="data-viz-tab">
+        <div class="project-tab-wrapper">
+          <div class="project-image">
+            <img src="assets/img/projects/data_analysis.jpg" alt="Interactive Data Visualization Platform">
+          </div>
+          <div class="project-details">
+            <h3>Interactive Data Visualization Platform</h3>
+            <p><strong>Overview:</strong> Created a web-based analysis platform with dynamic visualizations enabling users to perform complex data exploration without programming knowledge.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Built interactive dashboard with dynamic filtering, feature selection, and statistical analysis tools</li>
+              <li>Implemented comprehensive visualization suite for distribution analysis, relationship visualization, and categorical data exploration</li>
+              <li>Integrated analytical capabilities for outlier detection, PCA-based dimensionality reduction, and normality testing</li>
+              <li>Deployed containerized application to Google Cloud Platform for worldwide accessibility</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Dash</span>
+              <span>Plotly</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+              <span>Docker</span>
+              <span>GCP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/KaurHarleen1930/Rental-Price-Dynamic-Data-Analysis-Platform" class="btn small-btn" target="_blank"><i class="bi bi-github"></i> Code</a>
+              <a href="https://dashapp-220837192729.northamerica-northeast1.run.app/" class="btn small-btn" target="_blank"><i class="bi bi-link-45deg"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 Tab Content -->
+      <div class="tab-pane fade" id="ecommerce-content" role="tabpanel" aria-labelledby="ecommerce-tab">
+        <div class="project-tab-wrapper">
+          <div class="project-image">
+            <img src="assets/img/projects/e_com_plat.jpg" alt="E-commerce Platform">
+          </div>
+          <div class="project-details">
+            <h3>E-Commerce Platform: Java & Angular Web Application</h3>
+            <p><strong>Overview:</strong> Engineered a robust, scalable e-commerce platform that revolutionized online purchasing experiences.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Secure payment integration with Stripe, ensuring seamless and protected financial transactions</li>
+              <li>Advanced backend optimization with Java, reducing database query response times by 40%</li>
+              <li>Comprehensive Angular frontend delivering responsive, intuitive user interfaces</li>
+              <li>Automated customer communication workflows enhancing user engagement and retention</li>
+              <li>Implemented complex SQL query optimizations for efficient data retrieval and management</li>
+            </ul>
+            <p><strong>Impact:</strong> Developed a high-performance e-commerce solution that significantly improved transaction speed, security, and overall user experience.</p>
+            <div class="project-tech">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Angular</span>
+              <span>SQL</span>
+              <span>Stripe API</span>
+              <span>RESTful Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>    
+    <!-- Experience Section -->
+<section id="experience" class="experience section dark-background">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Work Experience</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="experience-timeline">
+      <!-- Software Engineer -->
+      <div class="timeline-item">
+        <h3>Software Engineer</h3>
+        <h4>Fidelity Investments</h4>
+        <span class="timeline-date">August 2021 - August 2024</span>
+        
+        <!-- Data Engineering & Analytics Projects -->
+        <h5 class="timeline-category">Data Engineering & Analytics Projects</h5>
+        
+        <div class="timeline-content">
+          <h5>Cloud-Based ETL Pipeline</h5>
+          <ul>
+            <li>Designed and implemented a comprehensive data transformation architecture using Spring Batch, AWS S3, and Snowflake, creating a scalable system that replaced legacy flat file processing</li>
+            <li>Implemented statistical validation procedures and data normalization techniques to ensure data quality and consistency</li>
+            <li>Achieved $2.5M annual cost savings through architecture optimization and process automation</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Spring Batch</span>
+            <span>AWS S3</span>
+            <span>Snowflake</span>
+            <span>Java</span>
+            <span>Statistical Analysis</span>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <h5>Real-Time Data Processing System</h5>
+          <ul>
+            <li>Led development of an end-to-end data pipeline that processed 50K+ records per minute from mainframe systems to cloud environments</li>
+            <li>Engineered data transformation workflows using Python, SQL, and CDC replication with Kafka integration</li>
+            <li>Implemented statistical analysis methods to validate data integrity during high-volume migrations</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Kafka</span>
+            <span>CDC</span>
+            <span>AWS</span>
+            <span>Snowflake</span>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <h5>Automated Data Validation Framework</h5>
+          <ul>
+            <li>Created a robust validation framework achieving 90% test coverage for critical customer account workflows</li>
+            <li>Developed rule-based validation checks and statistical thresholds to automate quality assurance</li>
+            <li>Designed modular components that could be reused across multiple data pipelines</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Java</span>
+            <span>JUnit</span>
+            <span>SQL</span>
+            <span>Statistical Methods</span>
+          </div>
+        </div>
+        
+        <!-- System Optimization & Infrastructure -->
+        <h5 class="timeline-category">System Optimization & Infrastructure</h5>
+        
+        <div class="timeline-content">
+          <h5>Production Performance Analysis</h5>
+          <ul>
+            <li>Conducted comprehensive analysis of production systems by extracting patterns from error logs and performance metrics</li>
+            <li>Identified 50+ critical system bottlenecks through data-driven investigation</li>
+            <li>Implemented SQL query and stored procedure optimizations that reduced latency by 40%</li>
+          </ul>
+          <div class="tech-stack">
+            <span>SQL</span>
+            <span>Performance Tuning</span>
+            <span>Log Analysis</span>
+            <span>Statistical Methods</span>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <h5>Cloud Infrastructure Automation</h5>
+          <ul>
+            <li>Architected containerized data pipelines using Terraform, Docker, and Kubernetes (EKS)</li>
+            <li>Implemented CI/CD workflows that increased deployment frequency and reduced manual intervention</li>
+            <li>Improved data processing efficiency by 60% through automated workflow optimization</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Terraform</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>AWS EKS</span>
+            <span>CI/CD</span>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <h5>Database Architecture Analysis</h5>
+          <ul>
+            <li>Conducted data-driven proof of concept comparing CockroachDB and Oracle performance metrics</li>
+            <li>Analyzed read/write speeds and transaction processing capabilities under various workloads</li>
+            <li>Provided evidence-based recommendations for database architecture to support high-volume financial data processing</li>
+          </ul>
+          <div class="tech-stack">
+            <span>CockroachDB</span>
+            <span>Oracle</span>
+            <span>Performance Testing</span>
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Summer Analyst -->
+      <div class="timeline-item">
+        <h3>Summer Analyst</h3>
+        <h4>Fidelity Investments</h4>
+        <span class="timeline-date">May 2020 - July 2020</span>
+        
+        <div class="timeline-content">
+          <h5>Feedback Analytics System</h5>
+          <ul>
+            <li>Engineered a data collection and analytics system for 60,000+ employees using SharePoint</li>
+            <li>Implemented A/B testing methodologies to optimize feature placement and user engagement</li>
+            <li>Developed interactive dashboards using Power BI and Tableau to transform feedback data into actionable insights</li>
+          </ul>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+            <span>A/B Testing</span>
+            <span>SharePoint</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Additional CSS for new category headers -->
+<style>
+  .timeline-category {
+    color: var(--primary-color, #0d6efd);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+</style>
+
+<!-- Skills Section -->
+<section id="skills" class="skills section dark-background">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills & Technologies</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-code-slash"></i> Programming Languages & Frameworks</h3>
+        <div class="skill-tags">
+          <span>Python</span>
+          <span>Java</span>
+          <span>SQL</span>
+          <span>PL/SQL</span>
+          <span>TypeScript</span>
+          <span>HTML</span>
+          <span>CSS</span>          
+          <span>Spring Boot</span>
+          <span>Angular</span>
+          <span>Git</span>
+        </div>
+      </div>
+      
+     
+      <!-- Data Science & Machine Learning -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-graph-up"></i> Data Science & Machine Learning</h3>
+        <div class="skill-tags">
+          <span>Scikit-learn</span>
+          <span>TensorFlow</span>
+          <span>XGBoost</span>
+          <span>LightGBM</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>SciPy</span>
+        </div>
+      </div>
+      
+      <!-- Statistical Methods -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-calculator"></i> Statistical Methods</h3>
+        <div class="skill-tags">
+          <span>Hypothesis Testing</span>
+          <span>A/B Testing</span>
+          <span>Statistical Validation</span>
+          <span>Time Series Analysis</span>
+          <span>OLS Regression</span>
+          <span>Cross-validation</span>
+          <span>Anomaly Detection</span>
+          <span>Distribution Analysis</span>
+        </div>
+      </div>
+      
+      <!-- Data Visualization -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-bar-chart"></i> Data Visualization</h3>
+        <div class="skill-tags">
+          <span>Tableau</span>
+          <span>Power BI</span>
+          <span>Plotly</span>
+          <span>Dash</span>
+          <span>Matplotlib</span>
+          <span>Seaborn</span>
+          <span>Interactive Dashboards</span>
+          <span>Data Storytelling</span>
+        </div>
+      </div>
+      
+      
+      <!-- Big Data Technologies -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-hdd-stack"></i> Database Systems & Big Data Technologies</h3>
+        <div class="skill-tags">
+          <span>Oracle</span>
+          <span>Snowflake</span>
+          <span>CockroachDB</span>
+          <span>NoSQL</span>
+          <span>Apache Spark</span>
+          <span>Apache Kafka</span>
+          <span>Hadoop</span>
+          <span>ETL Pipeline Development</span>
+          <span>Batch Processing</span>
+        </div>
+      </div>
+
+      
+      <!-- DevOps & Infrastructure -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-gear"></i> DevOps & Cloud</h3>
+        <div class="skill-tags">
+          <span>AWS</span>
+          <span>Google Cloud Platform</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>CI/CD</span>
+          <span>Terraform</span>
+          <span>Jenkins</span>
+          <span>Agile Methodologies</span>
+        </div>
+      </div>
+      
+      <!-- Web Development -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-globe"></i> Web Development</h3>
+        <div class="skill-tags">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>SharePoint</span>
+          <span>Bootstrap</span>
+          <span>RESTful API Development</span>
+          <span>Web Application Architecture</span>
+        </div>
+      </div>
+      
+      <!-- Certifications -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-award"></i> Certifications</h3>
+        <div class="certifications">
+          <div class="certification">
+            <i class="bi bi-cloud-check"></i>
+            <span>AWS Certified Cloud Practitioner</span>
+          </div>
+          <div class="certification">
+            <i class="bi bi-database-check"></i>
+            <span>Database Certified SQL Associate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<!-- Contact Section -->
+<section id="contact" class="contact section dark-background">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Reach Out</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gy-4">
+      <div class="col-lg-5">
+        <div class="info-wrap">
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Virginia, United States</p>
+            </div>
+          </div>
+
+          <div class="info-item d-flex">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:kaurharleen@vt.edu">kaurharleen@vt.edu</a></p>
+            </div>
+          </div>
+
+          <div class="info-item d-flex">
+            <i class="bi bi-phone flex-shrink-0"></i>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+15716722192">+1 571-672-2192</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-formspree-id" method="POST">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message" required></textarea>
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn primary-btn">Send Message</button>
+            <div id="form-status" class="mt-3"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+      <style>
+    .contact-form .form-control {
+      padding: 12px 15px;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2);
+    }
+
+    .info-item a {
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+    }
+
+    .info-item a:hover {
+      color: var(--accent-color);
+    }
+
+    .alert {
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .alert-success {
+      background-color: rgba(86, 211, 100, 0.1);
+      color: #56d364;
+      border: 1px solid rgba(86, 211, 100, 0.2);
+    }
+
+    .alert-danger {
+      background-color: rgba(248, 81, 73, 0.1);
+      color: #f85149;
+      border: 1px solid rgba(248, 81, 73, 0.2);
+    }
+    </style>
+  <!-- About Section -->
+<section id="about" class="about section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Me</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="about-layout">
+      <!-- Left side - Profile Image -->
+      <div class="about-image-container">
+        <!-- Replace with your actual image path -->
+        <img src="assets/img/projects/profile-img.JPG" class="profile-image" alt="Harleen Kaur">
+      </div>
+      
+      <!-- Right side - Content -->
+      <div class="about-content">
+        <p>
+          A storyteller at heart and an engineer by trade, I thrive at the crossroads of creativity and technology. Whether it's designing intelligent systems, leading impactful initiatives, or bringing ideas to life through code and art, I believe in innovation with purpose.
+        </p>
+        
+        <p>
+          Currently, I am a <span class="highlight">Master's student at Virginia Tech</span>, specializing in <span class="highlight">Machine Learning and Data Analytics</span>, with <span class="highlight">three years of experience at Fidelity Investments</span> as a <span class="highlight">Full-Stack Developer</span>. I've built large-scale data pipelines, optimized cloud infrastructures, and engineered solutions that saved millions—earning me <span class="highlight">two Impact Awards</span>. My leadership journey includes heading <span class="highlight">Learning & Development at Fidelity</span>, mentoring teams, and driving organization-wide upskilling initiatives. Now, as a <span class="highlight">Graduate School Assistant at Virginia Tech</span>, I blend research, strategy, and innovation to support academic growth.
+        </p>
+        
+        <p>
+          Beyond tech, I <span class="highlight">paint, teach, and design</span>. As the <span class="highlight">Social Media Head of E-Cell</span>, I nurtured my love for branding and storytelling, crafting digital experiences that inspire. I also enjoy mentoring students, breaking down complex topics into engaging lessons.
+        </p>
+        
+        <p>
+          When I'm not coding or strategizing, you'll find me bringing stories to canvas.
+        </p>
+        
+        <!-- Contact Info Card -->
+        <div class="info-card contact-card">
+          <div class="info-grid">
+            <div class="info-item">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <h3>Email:</h3>
+                <p><a href="mailto:kaurharleen@vt.edu">kaurharleen@vt.edu</a></p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <h3>Phone:</h3>
+                <p><a href="tel:+15716722192">+1 571-672-2192</a></p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <h3>Location:</h3>
+                <p>Arlington, Virginia, USA</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="bi bi-mortarboard"></i>
+              <div>
+                <h3>Degree:</h3>
+                <p>MEng in Computer Science</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Art Gallery Card -->
+        <div class="info-card art-card">
+          <div class="art-content">
+            <div class="art-text">
+              <h3>Explore My Creative Side</h3>
+              <p>Discover my artwork - where technology meets creativity and stories come to life through colors and shapes.</p>
+              <a href="https://HarleenCreativeHub.com/gallery" target="_blank" class="art-link">
+                Visit My Art Gallery <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="art-image">
+              <img src="assets/img/projects/edit-1.JPG" alt="Sample Artwork">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Additional CSS for improved About section -->
+<style>
+  .about-layout {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-image-container {
+    flex: 0 0 35%;
+    position: relative;
+  }
+  
+  .profile-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .profile-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-content {
+    flex: 0 0 65%;
+  }
+  
+  .highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+  
+  /* Info Cards Styling */
+  .info-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Contact Card */
+  .contact-card {
+    margin-top: 2rem;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .info-item i {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    background-color: rgba(88, 166, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-item h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: var(--text-primary);
+  }
+  
+  .info-item p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  
+  .info-item a {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+  }
+  
+  .info-item a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Art Gallery Card */
+  .art-card {
+    margin-top: 1.5rem;
+  }
+  
+  .art-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .art-text {
+    flex: 1;
+  }
+  
+  .art-text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .art-text p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  
+  .art-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .art-link i {
+    transition: transform 0.3s ease;
+  }
+  
+  .art-link:hover {
+    color: var(--accent-hover);
+  }
+  
+  .art-link:hover i {
+    transform: translateX(5px);
+  }
+  
+  .art-image {
+    flex: 0 0 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .art-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .art-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    .about-layout {
+      flex-direction: column;
+    }
+    
+    .about-image-container, 
+    .about-content {
+      flex: 0 0 100%;
+    }
+    
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .art-content {
+      flex-direction: column;
+    }
+    
+    .art-image {
+      flex: 0 0 200px;
+      width: 100%;
+      height: 150px;
+    }
+  }
+</style>
+  
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        <p>© 2025 Harleen Kaur. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
