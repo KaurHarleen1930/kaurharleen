@@ -81,7 +81,7 @@
     
     <!-- Job seeking tag - placed below buttons -->
     <div class="job-seeking-tag">
-      <span class="tag highlight">Actively Looking for Job Opportunities in Machine Learning, Data Science and Data Analyst Roles</span>
+      <span class="tag highlight">Actively Looking for Job Opportunities in Full Stack, Data Science and Data Analyst Roles</span>
     </div>
   </div>
 </section>
@@ -193,6 +193,16 @@
         </button>
       </li>
       <li class="nav-item" role="presentation">
+        <button class="nav-link" id="emotion-tab" data-bs-toggle="tab" data-bs-target="#emotion-content" type="button" role="tab" aria-controls="emotion-content" aria-selected="false">
+          Emotion Classification using NLP
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="naive-bayes-tab" data-bs-toggle="tab" data-bs-target="#naive-bayes-content" type="button" role="tab" aria-controls="naive-bayes-content" aria-selected="false">
+          Naive Bayes & Decision Tree on FMNIST
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
         <button class="nav-link" id="data-viz-tab" data-bs-toggle="tab" data-bs-target="#data-viz-content" type="button" role="tab" aria-controls="data-viz-content" aria-selected="false">
           Interactive Data Visualization Platform
         </button>
@@ -239,7 +249,72 @@
         </div>
       </div>
       
-      <!-- Project 2 Tab Content -->
+      <!-- Project 2 Tab Content (New - Emotion Classification) -->
+      <div class="tab-pane fade" id="emotion-content" role="tabpanel" aria-labelledby="emotion-tab">
+        <div class="project-tab-wrapper">
+          <div class="project-image">
+            <img src="assets/img/projects/nlp-img.png" alt="Emotion Classification using NLP">
+          </div>
+          <div class="project-details">
+            <h3>Emotion Classification using NLP</h3>
+            <p><strong>Overview:</strong> Created a text-based emotion classification system using the Hugging Face "Emotion Dataset" to categorize text into six emotions: Sadness, Joy, Love, Anger, Fear, and Surprise.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Performed extensive data preprocessing including lowercasing, tokenization, stopword removal, lemmatization, while preserving emotional cues</li>
+              <li>Implemented multiple feature extraction techniques: Bag of Words, TF-IDF (with feature selection using Chi-square), and pre-trained embeddings (Word2Vec, GloVe, Sentence-BERT)</li>
+              <li>Trained and compared multiple models including Random Forest, SVM, and XGBoost</li>
+              <li>Achieved best performance with Word2Vec + XGBoost (68.90% accuracy) versus Sentence-BERT (66.95%) and traditional approaches (59%)</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>Word2Vec</span>
+              <span>BERT</span>
+              <span>TF-IDF</span>
+              <span>XGBoost</span>
+              <span>SVM</span>
+              <span>Random Forest</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/KaurHarleen1930/Emotion_Classification_Using_NLP" class="btn small-btn" target="_blank"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 Tab Content (New - Naive Bayes) -->
+      <div class="tab-pane fade" id="naive-bayes-content" role="tabpanel" aria-labelledby="naive-bayes-tab">
+        <div class="project-tab-wrapper">
+          <div class="project-image">
+            <img src="assets/img/projects/fmnist.png" alt="Naive Bayes & Decision Tree on FMNIST Dataset">
+          </div>
+          <div class="project-details">
+            <h3>Implementing Naive Bayes & Decision Tree on FMNIST Dataset</h3>
+            <p><strong>Overview:</strong> Implemented a Naive Bayes classifier from scratch and a Decision Tree model using Scikit-learn to classify clothing items from the Fashion MNIST dataset, focusing on distinguishing between Trousers and Pullovers.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Built Naive Bayes classifier from scratch, computing conditional probabilities and posterior probabilities without using ML libraries</li>
+              <li>Developed a Decision Tree classifier (max depth = 10, Gini index) for performance comparison</li>
+              <li>Manually implemented evaluation metrics including accuracy, precision, recall, and ROC curve without using existing libraries</li>
+              <li>Experimented with various binarization thresholds (100 to 200) and analyzed impact on classification performance</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Naive Bayes</span>
+              <span>Decision Trees</span>
+              <span>scikit-learn</span>
+              <span>FMNIST</span>
+              <span>ROC Curve</span>
+              <span>Feature Preprocessing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/KaurHarleen1930/Fashion_MNIST_dataset_classification_NB_DT" class="btn small-btn" target="_blank"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 Tab Content (Original Data Viz) -->
       <div class="tab-pane fade" id="data-viz-content" role="tabpanel" aria-labelledby="data-viz-tab">
         <div class="project-tab-wrapper">
           <div class="project-image">
@@ -272,7 +347,7 @@
         </div>
       </div>
       
-      <!-- Project 3 Tab Content -->
+      <!-- Project 5 Tab Content (Original E-Commerce) -->
       <div class="tab-pane fade" id="ecommerce-content" role="tabpanel" aria-labelledby="ecommerce-tab">
         <div class="project-tab-wrapper">
           <div class="project-image">
@@ -297,12 +372,62 @@
               <span>SQL</span>
               <span>Stripe API</span>
               <span>RESTful Services</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>    
+</section>
+
+<!-- Additional CSS for project tabs -->
+<style>
+  /* Make the tab navigation scrollable on mobile */
+  @media (max-width: 768px) {
+    .nav-tabs.project-tabs {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      padding-bottom: 5px;
+    }
+    
+    .nav-item {
+      display: inline-block;
+      float: none;
+    }
+    
+    .nav-link {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Enhance the project tech tags */
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .project-tech span {
+    background-color: rgba(88, 166, 255, 0.1);
+    color: var(--accent-color);
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+  }
+  
+  .project-tech span:hover {
+    background-color: rgba(88, 166, 255, 0.2);
+    transform: translateY(-2px);
+  }
+</style>
     <!-- Experience Section -->
 <section id="experience" class="experience section dark-background">
   <div class="container section-title" data-aos="fade-up">
@@ -313,7 +438,7 @@
     <div class="experience-timeline">
       <!-- Software Engineer -->
       <div class="timeline-item">
-        <h3>Software Engineer</h3>
+        <h3>Full Stack Engineer</h3>
         <h4>Fidelity Investments</h4>
         <span class="timeline-date">August 2021 - August 2024</span>
         
@@ -340,16 +465,17 @@
           <h5>Real-Time Data Processing System</h5>
           <ul>
             <li>Led development of an end-to-end data pipeline that processed 50K+ records per minute from mainframe systems to cloud environments</li>
-            <li>Engineered data transformation workflows using Python, SQL, and CDC replication with Kafka integration</li>
+            <li>Engineered data transformation workflows using Python, SQL, Spring Boot, and CDC replication with Kafka integration</li>
             <li>Implemented statistical analysis methods to validate data integrity during high-volume migrations</li>
           </ul>
           <div class="tech-stack">
             <span>Python</span>
+            <span>Spring Boot</span>
             <span>SQL</span>
             <span>Kafka</span>
             <span>CDC</span>
             <span>AWS</span>
-            <span>Snowflake</span>
+            <span>Oracle</span>
           </div>
         </div>
         
@@ -363,6 +489,7 @@
           <div class="tech-stack">
             <span>Java</span>
             <span>JUnit</span>
+            <span>Cucumber Framework</span>
             <span>SQL</span>
             <span>Statistical Methods</span>
           </div>
@@ -383,9 +510,11 @@
             <span>Performance Tuning</span>
             <span>Log Analysis</span>
             <span>Statistical Methods</span>
+            <span>Datadog</span>
+            <span>Perf Testing</span>
           </div>
         </div>
-        
+
         <div class="timeline-content">
           <h5>Cloud Infrastructure Automation</h5>
           <ul>
@@ -416,6 +545,45 @@
             <span>SQL</span>
           </div>
         </div>
+
+        <h5 class="timeline-category">API Development</h5>
+        
+        <div class="timeline-content">
+          <h5>Mutual Funds Domain</h5>
+          <ul>
+            <li>Developed a dynamic Rule Engine API with multiple parameters for accurate fund selection and streamlined rules creation</li>
+            <li>Maintained comprehensive Swagger documentation for RESTful APIs to ensure seamless integration</li>
+            <li>Designed and implemented microservices architecture serving 10K+ daily users with robust Java backend services</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>REST API</span>
+            <span>Swagger</span>
+            <span>Microservices</span>
+            <span>Datadog</span>
+            <span>AWS</span>
+            <span>Docker</span>
+          </div>
+        </div>
+        
+        <!-- Frontend Integration -->
+        
+        <div class="timeline-content">
+          <h5>Frontend Integration</h5>
+          <ul>
+            <li>Debugged and enhanced frontend applications for mutual fund management using Angular and React</li>
+            <li>Implemented feature enhancements that improved user experience and application performance</li>
+            <li>Conducted UI testing using Selenium framework to ensure cross-browser compatibility and responsive design</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Angular</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>Selenium</span>
+          </div>
+        </div>
       </div>
       
       <!-- Summer Analyst -->
@@ -438,6 +606,20 @@
             <span>Tableau</span>
             <span>A/B Testing</span>
             <span>SharePoint</span>
+          </div>
+        </div>
+        
+        <div class="timeline-content">
+          <h5>SharePoint Performance Optimization</h5>
+          <ul>
+            <li>Reduced SharePoint page load time by 40% for all employees by standardizing JavaScript and CSS file references across all sites</li>
+            <li>Improved user productivity and increased platform engagement through optimized web performance</li>
+          </ul>
+          <div class="tech-stack">
+            <span>SharePoint</span>
+            <span>JavaScript</span>
+            <span>CSS</span>
+            <span>Web Performance</span>
           </div>
         </div>
       </div>
@@ -468,25 +650,82 @@
     <div class="skills-grid">
       <!-- Programming Languages -->
       <div class="skill-category-card">
-        <h3><i class="bi bi-code-slash"></i> Programming Languages & Frameworks</h3>
+        <h3><i class="bi bi-code-slash"></i> Programming Languages</h3>
         <div class="skill-tags">
-          <span>Python</span>
           <span>Java</span>
+          <span>Python</span>
           <span>SQL</span>
           <span>PL/SQL</span>
           <span>TypeScript</span>
-          <span>HTML</span>
-          <span>CSS</span>          
-          <span>Spring Boot</span>
-          <span>Angular</span>
-          <span>Git</span>
+          <span>JavaScript</span>
+          <span>HTML/CSS</span>
+          <span>C</span>
+          <span>Node.js</span>
         </div>
       </div>
       
+      <!-- Frameworks & Tools -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-tools"></i> Frameworks & Tools</h3>
+        <div class="skill-tags">
+          <span>Spring Boot</span>
+          <span>Spring Batch</span>
+          <span>Angular</span>
+          <span>React</span>
+          <span>Maven</span>
+          <span>Git</span>
+          <span>JIRA</span>
+          <span>Swagger</span>
+          <span>JUnit</span>
+          <span>Selenium</span>
+          <span>Cucumber</span>
+        </div>
+      </div>
+
+       <!-- Cloud & DevOps -->
+       <div class="skill-category-card">
+        <h3><i class="bi bi-gear"></i> Cloud & DevOps</h3>
+        <div class="skill-tags">
+          <span>AWS (EC2, EKS, S3)</span>
+          <span>Google Cloud Platform</span>
+          <span>Azure</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>CI/CD</span>
+          <span>Terraform</span>
+          <span>Jenkins</span>
+          <span>Agile Methodology</span>
+        </div>
+      </div>
+      
+      <!-- Security & Compliance -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-shield-lock"></i> Security & Compliance</h3>
+        <div class="skill-tags">
+          <span>OWASP Top 10</span>
+          <span>Application Security</span>
+          <span>Pentesting</span>
+          <span>Data Compliance</span>
+          <span>Security Scanners</span>
+        </div>
+      </div>
      
+      <!-- Database & Big Data -->
+      <div class="skill-category-card">
+        <h3><i class="bi bi-hdd-stack"></i> Database & Big Data</h3>
+        <div class="skill-tags">
+          <span>Oracle</span>
+          <span>Snowflake</span>
+          <span>CockroachDB</span>
+          <span>NoSQL</span>
+          <span>Apache Kafka</span>
+          <span>ETL Pipelines</span>
+        </div>
+      </div>
+      
       <!-- Data Science & Machine Learning -->
       <div class="skill-category-card">
-        <h3><i class="bi bi-graph-up"></i> Data Science & Machine Learning</h3>
+        <h3><i class="bi bi-graph-up"></i> Data Science & ML</h3>
         <div class="skill-tags">
           <span>Scikit-learn</span>
           <span>TensorFlow</span>
@@ -495,6 +734,8 @@
           <span>Pandas</span>
           <span>NumPy</span>
           <span>SciPy</span>
+          <span>Neural Networks</span>
+          <span>NLP</span>
         </div>
       </div>
       
@@ -504,12 +745,12 @@
         <div class="skill-tags">
           <span>Hypothesis Testing</span>
           <span>A/B Testing</span>
-          <span>Statistical Validation</span>
+          <span>Regression Analysis</span>
           <span>Time Series Analysis</span>
-          <span>OLS Regression</span>
           <span>Cross-validation</span>
           <span>Anomaly Detection</span>
-          <span>Distribution Analysis</span>
+          <span>Classification Models</span>
+          <span>Predictive Modeling</span>
         </div>
       </div>
       
@@ -524,55 +765,9 @@
           <span>Matplotlib</span>
           <span>Seaborn</span>
           <span>Interactive Dashboards</span>
-          <span>Data Storytelling</span>
         </div>
       </div>
       
-      
-      <!-- Big Data Technologies -->
-      <div class="skill-category-card">
-        <h3><i class="bi bi-hdd-stack"></i> Database Systems & Big Data Technologies</h3>
-        <div class="skill-tags">
-          <span>Oracle</span>
-          <span>Snowflake</span>
-          <span>CockroachDB</span>
-          <span>NoSQL</span>
-          <span>Apache Spark</span>
-          <span>Apache Kafka</span>
-          <span>Hadoop</span>
-          <span>ETL Pipeline Development</span>
-          <span>Batch Processing</span>
-        </div>
-      </div>
-
-      
-      <!-- DevOps & Infrastructure -->
-      <div class="skill-category-card">
-        <h3><i class="bi bi-gear"></i> DevOps & Cloud</h3>
-        <div class="skill-tags">
-          <span>AWS</span>
-          <span>Google Cloud Platform</span>
-          <span>Docker</span>
-          <span>Kubernetes</span>
-          <span>CI/CD</span>
-          <span>Terraform</span>
-          <span>Jenkins</span>
-          <span>Agile Methodologies</span>
-        </div>
-      </div>
-      
-      <!-- Web Development -->
-      <div class="skill-category-card">
-        <h3><i class="bi bi-globe"></i> Web Development</h3>
-        <div class="skill-tags">
-          <span>React</span>
-          <span>TypeScript</span>
-          <span>SharePoint</span>
-          <span>Bootstrap</span>
-          <span>RESTful API Development</span>
-          <span>Web Application Architecture</span>
-        </div>
-      </div>
       
       <!-- Certifications -->
       <div class="skill-category-card">
@@ -586,16 +781,42 @@
             <i class="bi bi-database-check"></i>
             <span>Database Certified SQL Associate</span>
           </div>
+          <div class="certification">
+            <i class="bi bi-trophy"></i>
+            <span>Information Security (OWASP)</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <style>
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-category-card {
+    padding: 1.25rem;
+  }
+  
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-tags span {
+    padding: 4px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .certifications {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   
   @media (max-width: 768px) {
